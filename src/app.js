@@ -22,5 +22,6 @@ app.use(expressUpload({
 
 app.use('/', indexRouter);
 app.use(HTTPErrorMiddleware.handleMiddleware);
+app.listen(port);
 
 module.exports = app;
